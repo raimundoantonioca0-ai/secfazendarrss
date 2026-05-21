@@ -1,514 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head> <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18147490198"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlowSkin Beauty</title>
 
-  gtag('config', 'AW-18147490198');
-</script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Event snippet for Visualização de página (1) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18147490198/uYzFCO7L-q4cEJbzss1D',
-      'value': 1.0,
-      'currency': 'BRL'
-  });
-</script>
+  <style>
 
-  <!-- Event snippet for Visualização de página (1) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18147490198/uYzFCO7L-q4cEJbzss1D',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
 
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#fff;
+      color:#222;
+    }
 
-    
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>SkinCare Essence™ | Tecnologia e Natureza</title>
+    header{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      background:white;
+      z-index:999;
+      box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:#d67a8a;
+    }
 
-<style>
+    nav a{
+      margin-left:25px;
+      text-decoration:none;
+      color:#333;
+      font-weight:500;
+      transition:.3s;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+    nav a:hover{
+      color:#d67a8a;
+    }
 
-body{
-    background:#f7f5f2;
-    color:#222;
-}
+    .hero{
+      width:100%;
+      height:100vh;
+      background:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600') center/cover;
+      display:flex;
+      align-items:center;
+      padding:0 8%;
+      position:relative;
+    }
 
-header{
-    width:100%;
-    padding:20px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    background:#fff;
-    position:fixed;
-    top:0;
-    z-index:999;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);
-}
+    .overlay{
+      position:absolute;
+      inset:0;
+      background:rgba(0,0,0,0.35);
+    }
 
-.logo{
-    font-size:28px;
-    font-weight:700;
-    color:#1f3a32;
-}
+    .hero-content{
+      position:relative;
+      z-index:2;
+      max-width:600px;
+      color:white;
+    }
 
-nav a{
-    text-decoration:none;
-    color:#333;
-    margin-left:25px;
-    font-weight:500;
-    transition:.3s;
-}
+    .hero-content h1{
+      font-size:62px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
 
-nav a:hover{
-    color:#5d8b7c;
-}
+    .hero-content p{
+      font-size:18px;
+      margin-bottom:30px;
+      line-height:1.6;
+    }
 
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:120px 8%;
-    gap:40px;
-}
+    .btn{
+      display:inline-block;
+      padding:16px 35px;
+      background:#d67a8a;
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:600;
+      transition:.3s;
+    }
 
-.hero-text{
-    flex:1;
-}
+    .btn:hover{
+      background:#be6172;
+      transform:translateY(-2px);
+    }
 
-.hero-text h1{
-    font-size:58px;
-    line-height:1.1;
-    margin-bottom:25px;
-    color:#1e312a;
-}
+    .section{
+      padding:100px 8%;
+    }
 
-.hero-text p{
-    font-size:18px;
-    line-height:1.7;
-    color:#555;
-    margin-bottom:35px;
-}
+    .title{
+      text-align:center;
+      margin-bottom:60px;
+    }
 
-.btn{
-    padding:18px 35px;
-    background:#1f3a32;
-    color:#fff;
-    border:none;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
+    .title h2{
+      font-size:42px;
+      margin-bottom:15px;
+    }
 
-.btn:hover{
-    background:#44695d;
-}
+    .title p{
+      color:#666;
+    }
 
-.hero img{
-    width:500px;
-    border-radius:20px;
-    object-fit:cover;
-}
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
 
-.section{
-    padding:100px 8%;
-}
+    .card{
+      background:#fff;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:.3s;
+    }
 
-.section-title{
-    text-align:center;
-    margin-bottom:60px;
-}
+    .card:hover{
+      transform:translateY(-10px);
+    }
 
-.section-title h2{
-    font-size:42px;
-    color:#1f3a32;
-    margin-bottom:15px;
-}
+    .card img{
+      width:100%;
+      height:320px;
+      object-fit:cover;
+    }
 
-.section-title p{
-    color:#666;
-    max-width:700px;
-    margin:auto;
-}
+    .card-content{
+      padding:25px;
+    }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
+    .card-content h3{
+      margin-bottom:10px;
+    }
 
-.card{
-    background:#fff;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.06);
-    transition:.3s;
-}
+    .price{
+      color:#d67a8a;
+      font-size:24px;
+      font-weight:700;
+      margin:15px 0;
+    }
 
-.card:hover{
-    transform:translateY(-10px);
-}
+    .benefits{
+      background:#fff5f7;
+    }
 
-.card img{
-    width:100%;
-    height:280px;
-    object-fit:cover;
-}
+    .benefit-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
 
-.card-content{
-    padding:25px;
-}
+    .benefit{
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      text-align:center;
+    }
 
-.card-content h3{
-    margin-bottom:12px;
-    color:#1f3a32;
-}
+    .benefit h3{
+      margin:20px 0;
+    }
 
-.card-content p{
-    color:#666;
-    line-height:1.6;
-}
+    footer{
+      background:#111;
+      color:white;
+      padding:60px 8%;
+      text-align:center;
+    }
 
-.about{
-    display:flex;
-    align-items:center;
-    gap:50px;
-    flex-wrap:wrap;
-}
+    footer p{
+      opacity:.7;
+      margin-top:10px;
+    }
 
-.about img{
-    width:500px;
-    border-radius:20px;
-}
+    @media(max-width:768px){
 
-.about-text{
-    flex:1;
-}
+      .hero-content h1{
+        font-size:42px;
+      }
 
-.about-text h2{
-    font-size:42px;
-    margin-bottom:20px;
-    color:#1f3a32;
-}
+      nav{
+        display:none;
+      }
 
-.about-text p{
-    line-height:1.8;
-    color:#555;
-    margin-bottom:20px;
-}
+    }
 
-.testimonials{
-    background:#edf3f0;
-}
+  </style>
 
-.testimonial-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.testimonial{
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,.05);
-}
-
-.testimonial p{
-    color:#555;
-    margin-bottom:20px;
-    line-height:1.7;
-}
-
-.testimonial h4{
-    color:#1f3a32;
-}
-
-.cta{
-    background:#1f3a32;
-    color:#fff;
-    text-align:center;
-    padding:100px 8%;
-}
-
-.cta h2{
-    font-size:46px;
-    margin-bottom:20px;
-}
-
-.cta p{
-    max-width:700px;
-    margin:auto;
-    margin-bottom:35px;
-    line-height:1.8;
-}
-
-.cta .btn{
-    background:#fff;
-    color:#1f3a32;
-}
-
-footer{
-    background:#111;
-    color:#aaa;
-    padding:60px 8%;
-}
-
-.footer-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:40px;
-}
-
-footer h3{
-    color:#fff;
-    margin-bottom:20px;
-}
-
-footer p,
-footer a{
-    color:#aaa;
-    text-decoration:none;
-    line-height:2;
-}
-
-.copy{
-    border-top:1px solid rgba(255,255,255,.1);
-    margin-top:40px;
-    padding-top:25px;
-    text-align:center;
-    font-size:14px;
-}
-
-@media(max-width:900px){
-
-.hero{
-    flex-direction:column;
-    text-align:center;
-}
-
-.hero img,
-.about img{
-    width:100%;
-}
-
-.hero-text h1{
-    font-size:42px;
-}
-
-}
-
-</style>
 </head>
 <body>
 
 <header>
 
-<div class="logo">SkinCare Essence™</div>
+  <div class="logo">GlowSkin</div>
 
-<nav>
-<a href="#">Início</a>
-<a href="#">Produtos</a>
-<a href="#">Sobre</a>
-<a href="#">Contato</a>
-</nav>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Produtos</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
 
 </header>
 
 <section class="hero">
 
-<div class="hero-text">
-<h1>Tecnologia e Natureza cuidando da sua pele.</h1>
+  <div class="overlay"></div>
 
-<p>
-Cosméticos desenvolvidos com ativos naturais e performance científica para hidratação profunda, rejuvenescimento e cuidado diário da sua pele.
-</p>
+  <div class="hero-content">
 
-<a href="#" class="btn">Conheça os Produtos</a>
-</div>
+    <h1>Skincare de luxo para uma pele absurda.</h1>
 
-<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Skincare">
+    <p>
+      Tecnologia avançada, hidratação profunda e rejuvenescimento visível.
+      Sua rotina nunca mais vai ser básica.
+    </p>
 
-</section>
+    <a href="#" class="btn">Comprar Agora</a>
 
-<section class="section">
-
-<div class="section-title">
-<h2>Nossos Produtos</h2>
-<p>
-Criados para mulheres que exigem resultados reais sem abrir mão da leveza e naturalidade.
-</p>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-<h3>Cleansing Oil</h3>
-<p>
-Remove maquiagem, limpa profundamente e mantém a hidratação natural da pele.
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-<h3>Espuma de Limpeza</h3>
-<p>
-Limpeza suave para peles sensíveis com sensação refrescante e toque sedoso.
-</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-<h3>Creme Hidratante</h3>
-<p>
-Nutrição intensa com ativos naturais para revitalização e elasticidade da pele.
-</p>
-</div>
-</div>
-
-</div>
+  </div>
 
 </section>
 
 <section class="section">
 
-<div class="about">
+  <div class="title">
+    <h2>Nossos Queridinhos</h2>
+    <p>Produtos premium pra transformar sua pele.</p>
+  </div>
 
-<img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop">
+  <div class="products">
 
-<div class="about-text">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1200">
+      <div class="card-content">
+        <h3>Sérum Vitamina C</h3>
+        <p>Iluminação intensa e redução de manchas.</p>
+        <div class="price">R$ 89,90</div>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
 
-<h2>Ciência, beleza e autocuidado.</h2>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556228578-dd6c5f7d3c84?q=80&w=1200">
+      <div class="card-content">
+        <h3>Hidratante Ultra Glow</h3>
+        <p>Pele hidratada e firme por até 72h.</p>
+        <div class="price">R$ 119,90</div>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
 
-<p>
-Somos uma marca brasileira especializada em skincare premium, desenvolvendo fórmulas modernas com ativos naturais e tecnologia dermatológica.
-</p>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=1200">
+      <div class="card-content">
+        <h3>Clean Face Pro</h3>
+        <p>Limpeza profunda sem ressecar a pele.</p>
+        <div class="price">R$ 69,90</div>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
 
-<p>
-Nossa missão é transformar o cuidado diário em uma experiência sofisticada, eficiente e consciente.
-</p>
-
-<a href="#" class="btn">Saiba Mais</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section testimonials">
-
-<div class="section-title">
-<h2>O que nossas clientes dizem</h2>
-</div>
-
-<div class="testimonial-grid">
-
-<div class="testimonial">
-<p>
-“Minha pele mudou completamente depois que comecei a usar os produtos. Sensação absurda de limpeza e hidratação.”
-</p>
-<h4>Amanda Ribeiro</h4>
-</div>
-
-<div class="testimonial">
-<p>
-“Finalmente encontrei um skincare que entrega resultado sem agredir minha pele sensível.”
-</p>
-<h4>Juliana Costa</h4>
-</div>
-
-<div class="testimonial">
-<p>
-“O cleansing oil virou vício. Remove tudo e ainda deixa a pele macia.”
-</p>
-<h4>Fernanda Lopes</h4>
-</div>
-
-</div>
+  </div>
 
 </section>
 
-<section class="cta">
+<section class="section benefits">
 
-<h2>Transforme sua rotina de skincare.</h2>
+  <div class="title">
+    <h2>Por que escolher a GlowSkin?</h2>
+  </div>
 
-<p>
-Produtos desenvolvidos com ingredientes selecionados para entregar resultados reais e uma experiência premium.
-</p>
+  <div class="benefit-grid">
 
-<a href="#" class="btn">Comprar Agora</a>
+    <div class="benefit">
+      <h3>🌱 Cruelty Free</h3>
+      <p>Nada de teste em animais. Aqui é skincare com consciência.</p>
+    </div>
+
+    <div class="benefit">
+      <h3>✨ Resultado Rápido</h3>
+      <p>Produtos desenvolvidos pra entregar transformação real.</p>
+    </div>
+
+    <div class="benefit">
+      <h3>🧪 Tecnologia Avançada</h3>
+      <p>Ativos premium usados pelas maiores marcas do mercado.</p>
+    </div>
+
+  </div>
 
 </section>
 
 <footer>
 
-<div class="footer-grid">
+  <h2>GlowSkin Beauty</h2>
 
-<div>
-<h3>SkinCare Essence™</h3>
-<p>
-Tecnologia e natureza trabalhando juntas para cuidar da sua pele com excelência.
-</p>
-</div>
-
-<div>
-<h3>Contato</h3>
-<p>(11) 99999-9999</p>
-<p>contato@skincareessence.com.br</p>
-<p>São Paulo - SP</p>
-</div>
-
-<div>
-<h3>Links</h3>
-<p><a href="#">Política de Privacidade</a></p>
-<p><a href="#">Termos de Uso</a></p>
-<p><a href="#">Trocas e Devoluções</a></p>
-</div>
-
-</div>
-
-<div class="copy">
-Copyright © 2026 SkinCare Essence™ - CNPJ: 40.042.585/0001-27 - Todos os direitos reservados.
-</div>
+  <p>
+    Desenvolvido para quem não aceita skincare vagabundo.
+  </p>
 
 </footer>
 
